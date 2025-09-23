@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+      - primary meta tags
+    -->
+    <title>EmmanuxDev - Sofware Engineer and AI Enthusiast</title>
+    <meta name="title" content="EmmanuxDev - Sofware Engineer and AI Enthusiast">
+    <meta name="description" content="a full devloper, AI engineer and a problem solver">
+    
+
+    <!-- 
+     - favicon
+    -->
+    <link rel="shortcut icon" href="https://i.postimg.cc/43ps88GW/Purple-Abstract-A-Letter-Free-Logo.png">
+
+
+    <!-- 
+      - Google Font Links
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet" >
+
+    <!-- 
+      - Icon Link 
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 
+      - Custom css link
+    -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class="dark-theme">
+    <!-- 
+        - #HEADER
+    --> 
+    <section class="" id="header">
+        <nav id="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                EmmanuxDev
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#herosection" class="nav-link">Home</a></li>
+                <li><a href="#aboutsection" class="nav-link">About</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Tech-stack</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="nav-right-toggles">
+                    <div class="theme-toggle-hidden">
+                        <div class="toggle-options dark" data-themes="dark"><i class="fas fa-moon"></i></div>
+                        <div class="toggle-options light hide-theme" data-themes="light"><i class="fas fa-sun"></i></div>
+                        <div class="toggle-options blue hide-theme" data-themes="blue"><i class="fas fa-palette"></i></div>
+                    </div>
+
+                    <div class="theme-toggle-container">
+                        <div class="toggle-wrapper" id="themeToggle">
+                            <div class="toggle-slider" style="left: 5px;">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <div class="toggle-option" data-theme="dark"><i class="fas fa-moon"></i> Dark</div>
+                            <div class="toggle-option" data-theme="light"><i class="fas fa-sun"></i> Light</div>
+                            <div class="toggle-option" data-theme="blue"><i class="fas fa-palette"></i> Blue</div>
+                        </div>
+                    </div>
+
+                    <div class="cta-container nav-cta">
+                        <div><button class="cta-button pulse">Contact Me</button></div>
+                    </div>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-links">
+                <li><a href="#heroSection">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Tech-stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-button pulse">Contact Me</button>
+        </div>
+    </section>
+    
+    <section class="container" id="HeroSection">
+        <div class="hero">
+            <div class="content">
+                <span class="greeting">Hello World! <span class="intro">My name is</span></span>
+                <h1 class="name glitch" data-text="Abidoye Emmanuel">Abidoye Emmanuel</h1>
+                <h2 class="title">I'm a <span id="typing-text"></span><span class="cursor"></span></h2>
+                
+                <p class="description">
+                    I create exceptional digital experiences with clean, efficient code. 
+                    Specializing in full-stack development, AI integration, and responsive design.
+                </p>
+
+                <div class="code-snippet">
+                    <span class="code-keyword">const</span> <span class="code-function"> developer </span> = {<br>
+                    &nbsp;&nbsp;<span class="code-keyword">name</span>: <span class="code-string">"Abidoye Emmanuel"</span>,<br>
+                    &nbsp;&nbsp;<span class="code-keyword">title</span>: <span class="code-string">"Full-Stack Developer"</span>,<br>
+                    &nbsp;&nbsp;<span class="code-keyword">skills</span>: [<span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"AI/ML"</span>],<br>
+                    &nbsp;&nbsp;<span class="code-keyword">passion</span>: <span class="code-string">"Creating innovative digital solutions<span class="cursor code"></span>"</span><br>
+                    };
+                </div>
+
+                <div class="cta-container">
+                    <a href="#projects" class="cta cta-primary">View My Projects</a>
+                    <a href="#contact" class="cta cta-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="glow"></div>
+                <div class="image-overlay"></div>
+                <img src="https://i.postimg.cc/fyPqNKKF/1000172668-removebg-preview.png" alt="Developer Profile" class="profile-image">
+                <div class="scanlines"></div>
+                <div class="particles-container" id="particles"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="AboutSection">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Hello! I'm Abidoye Emmanuel, a passionate developer</h3>
+               <p>I specialize in creating exceptional digital experiences with clean, efficient code. With over 5 years of experience in the industry, I've worked on everything from small business websites to large enterprise applications.</p>
+                <p>My journey in tech started when I was 19, tinkering with HTML and CSS to customize my blog. Since then, I've never stopped learning and pushing the boundaries of what's possible on the web.</p>
+                <p>When I'm not coding, you can find me listening to music, reading computer related stuffs, or experimenting with new recipes in the kitchen.</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item animated">
+                    <i class="fab fa-js skill-icon"></i>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-desc">ES6+, React, Node, Express</div>
+                </div>
+                
+                <div class="skill-item animated delay-1">
+                    <i class="fab fa-python skill-icon"></i>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-desc">Django, Flask, Data Analysis</div>
+                </div>
+                
+                <div class="skill-item animated delay-2">
+                    <i class="fab fa-react skill-icon"></i>
+                    <div class="skill-name">React</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 88%"></div>
+                    </div>
+                    <div class="skill-desc">Hooks, Context, Redux</div>
+                </div>
+                
+                <div class="skill-item animated delay-3">
+                    <i class="fas fa-database skill-icon"></i>
+                    <div class="skill-name">Databases</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-desc">MongoDB, PostgreSQL, Firebase</div>
+                </div>
+                
+                <div class="skill-item animated">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-desc">REST APIs, Authentication</div>
+                </div>
+                
+                <div class="skill-item animated delay-1">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <div class="skill-name">Cloud</div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-desc">AWS, Docker, CI/CD</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="journey-section">
+            <h3 class="section-title journey-heading">My Journey</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h4 class="timeline-title">Computer Engineering Degree</h4>
+                        <p class="timeline-desc">My computer engineering journey has been defined by a deep-seated passion for system integration, a drive to create a seamless interface between hardware and software. I've gained hands-on experience by mastering core concepts from digital logic and electronics to network analysis. My expertise extends to the software layer, where I've applied my knowledge of object-oriented programming and assembly language to solve complex problems. These experiences have given me a unique perspective on the entire computing stack, positioning me to excel in roles that demand a holistic understanding of how systems are built and optimized.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h4 class="timeline-title">First Line of Code</h4>
+                        <p class="timeline-desc">My passion for programming ignited with my first line of code in C++. This experience grounded me in core programming concepts—from data structures and algorithms to the intricacies of object-oriented programming. Building on this solid foundation, I expanded my skills to modern web technologies, specifically JavaScript. I am currently channeling this expertise into a CGPA calculator with a web interface, a project that demonstrates my ability to integrate complex logic with a user-centric design. I'm actively pursuing new challenges and creating more projects that showcase my full-stack capabilities.</p>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="personality-section">
+            <h3 class="section-title Personality-heading">My Personality & Work Style</h3>
+            
+            <div class="traits-grid">
+                <div class="trait-item trait-item1">
+                    <i class="fas fa-puzzle-piece trait-icon"></i>
+                    <h4 class="trait-name">Problem Solver</h4>
+                    <p class="trait-desc">I thrive on tackling complex challenges and finding elegant solutions. There's nothing more satisfying than debugging a tricky issue or optimizing code for better performance.</p>
+                </div>
+                
+                <div class="trait-item trait-item2">
+                    <i class="fas fa-users trait-icon"></i>
+                    <h4 class="trait-name">Team Player</h4>
+                    <p class="trait-desc">I believe the best products are built through collaboration. I enjoy working with designers, product managers, and other developers to create something greater than the sum of its parts.</p>
+                </div>
+                
+                <div class="trait-item trait-item3">
+                    <i class="fas fa-lightbulb trait-icon"></i>
+                    <h4 class="trait-name">Continuous Learner</h4>
+                    <p class="trait-desc">In the fast-moving tech world, I'm always exploring new technologies and techniques. I dedicate time each week to learning and experimenting with new tools.</p>
+                </div>
+                
+                <div class="trait-item trait-item4">
+                    <i class="fas fa-tasks trait-icon"></i>
+                    <h4 class="trait-name">Detail Oriented</h4>
+                    <p class="trait-desc">I pay attention to the small things that make a big difference - from code readability to UI micro-interactions. Clean, maintainable code is my priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="project">
+        <div class="project-head">
+            <h1>My Projects</h1>
+            <p class="subtitle">A showcase of my latest work featuring modern technologies and innovative solutions. Hover over cards to see details.</p>
+        </div>
+
+        <!-- Skill Filter -->
+        <div class="filter-bar">
+           <div class="filter-btns">
+                <button class="filter-btn active" data-tech="all">All</button>
+                <button class="filter-btn" data-tech="E-commerce Payment">E-commerce platforms</button>
+                <button class="filter-btn" data-tech="Blogging platforms">Blogging platforms</button>
+                <button class="filter-btn" data-tech="Social media applications">Social media applications</button>
+                <button class="filter-btn" data-tech="News portals">News portals</button>
+                <button class="filter-btn" data-tech="Online Forums">Online Forums</button>
+                <button class="filter-btn" data-tech="iOS applications">iOS applications</button>
+                <button class="filter-btn" data-tech="Androidapp">Android applications</button>
+                <button class="filter-btn" data-tech="Cross-platform apps (React Nactive, Flutter)">Cross-platform apps (React Nactive, Flutter)</button>
+                <button class="filter-btn" data-tech="Data Visualisation">Data Visualisation</button>
+                <button class="filter-btn" data-tech="Machine Learning Models">Machine Learning Models</button>
+                <button class="filter-btn" data-tech="Predictive analytics">Predictive analytics</button>
+                <button class="filter-btn" data-tech="Data mining projects">Data mining projects</button>
+                <button class="filter-btn" data-tech="Chatbots">Chatbots</button>
+                <button class="filter-btn" data-tech="Visual assistants">Visual assistants</button>
+                <button class="filter-btn" data-tech="Automated workflows">Automated workflows</button>
+                <button class="filter-btn" data-tech="Ai-powered tools">Ai-powered tools</button>
+                <button class="filter-btn hidden-category" data-tech="Wed based games">Wed based games</button>
+                <button class="filter-btn hidden-category" data-tech="Mobile games">Mobile games</button>
+                <button class="filter-btn hidden-category" data-tech="CRM systems">CRM systems</button>
+                <button class="filter-btn hidden-category" data-tech="ERP systems">ERP systems</button>
+                <button class="filter-btn hidden-category" data-tech="Project management tools">Project management tools</button>
+                <button class="filter-btn hidden-category" data-tech="Custom business applications">Custom business applications</button>
+                <button class="filter-btn hidden-category" data-tech="RESTful APIs">RESTful APIs</button>
+                <button class="filter-btn hidden-category" data-tech="GraphQL APIs">GraphQL APIs</button>
+                <button class="filter-btn hidden-category" data-tech="API integrations">API integrations</button>
+                <button class="filter-btn hidden-category" data-tech="Cloud infrastructure projects (AWS, Azure, Google Cloud)">Cloud infrastructure projects (AWS, Azure, Google Cloud)</button>
+                <button class="filter-btn hidden-category" data-tech="Containerization (Docker)">Containerization (Docker)</button>
+                <button class="filter-btn hidden-category" data-tech="Continuous Integration/Continuous Deployment (CI/CD) pipelines">Continuous Integration/Continuous Deployment (CI/CD) pipelines</button>
+                <button class="filter-btn hidden-category" data-tech="Penetration testing projects">Penetration testing projects</button>
+                <button class="filter-btn hidden-category" data-tech="Security audit tools">Security audit tools</button>
+                <button class="filter-btn hidden-category" data-tech="Secure coding practices">Secure coding practices</button>
+                <button class="filter-btn hidden-category" data-tech="Educational tools">Educational tools</button>
+                <button class="filter-btn hidden-category" data-tech="Interactive simulations">Interactive simulations</button>
+                <button class="filter-btn hidden-category" data-tech="Healthcare management systems">Healthcare management systems</button>
+                <button class="filter-btn hidden-category" data-tech="Medical record systems">Medical record systems</button>
+                <button class="filter-btn hidden-category" data-tech="Wellness tracking applications">Wellness tracking applications</button>
+                <button class="filter-btn hidden-category" data-tech="Financial analytics tools">Financial analytics tools</button>
+                <button class="filter-btn hidden-category" data-tech="Payment">Payment gateways</button>
+           </div>
+
+            <div class="show-more-container">
+                <button class="show-more-btn" id="showMoreBtn">
+                    <span>Show more</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card large-card filtered-card"  data-tech="E-commerce Payment Androidapp">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">A full-featured online shopping experience with product filtering, user authentication, and payment processing.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>E-Commerce Platform</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> User authentication & authorization</li>
+                                <li><i class="fas fa-check-circle"></i> Shopping cart & wishlist</li>
+                                <li><i class="fas fa-check-circle"></i> Payment integration with Stripe</li>
+                                <li><i class="fas fa-check-circle"></i> Admin dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://responsive-admin-dashboard-psi.vercel.app" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/Emmanuel-dev-oss/Responsive-Admin-Dashboard" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card medium-card filtered-card" data-tech="Androidapp">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">A drag-and-drop task management application with real-time updates and team collaboration features.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>Task Management App</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> Drag & drop interface</li>
+                                <li><i class="fas fa-check-circle"></i> Real-time updates</li>
+                                <li><i class="fas fa-check-circle"></i> Team collaboration</li>
+                                <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card small-card filtered-card" data-tech="Androidapp">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Weather Forecast App</h3>
+                            <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>Weather Forecast App</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
+                                <li><i class="fas fa-check-circle"></i> Interactive maps</li>
+                                <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
+                                <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 4 -->
+            <div class="project-card small-card filtered-card" data-tech="Androidapp">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">API</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Weather Forecast App</h3>
+                            <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>Weather Forecast App</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
+                                <li><i class="fas fa-check-circle"></i> Interactive maps</li>
+                                <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
+                                <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card medium-card filtered-card" data-tech="Social media applications">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">GraphQL</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Social Media Dashboard</h3>
+                            <p class="project-description">A comprehensive dashboard for managing social media accounts with analytics and scheduling capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>Social Media Dashboard</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> Multi-platform integration</li>
+                                <li><i class="fas fa-check-circle"></i> Analytics & reporting</li>
+                                <li><i class="fas fa-check-circle"></i> Content scheduling</li>
+                                <li><i class="fas fa-check-circle"></i> Audience insights</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card large-card filtered-card" data-tech="Predictive analytics">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <div class="project-media">
+                            <video autoplay loop muted>
+                                <source src="" type="video/mp4">
+                            </video>
+                            <div class="project-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Fitness Tracker</h3>
+                            <p class="project-description">A comprehensive fitness application with workout planning, progress tracking, and nutrition logging.</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <div class="project-details">
+                            <h3>Fitness Tracker</h3>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check-circle"></i> Workout planning</li>
+                                <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+                                <li><i class="fas fa-check-circle"></i> Nutrition logging</li>
+                                <li><i class="fas fa-check-circle"></i> Social challenges</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="skills">
+        <div class="skills-header">
+            <h1>My tech mastery</h1>
+            <p class="subtitle">Explore my technical skills across different domains. Click on categories to see detailed skills and their relationships.</p>
+        </div>
+
+        <div class="filter-container">
+            <button class="skill-filter-btn active" data-category="frontend">
+                <i class="fas fa-code"></i> Frontend
+            </button>
+            <button class="skill-filter-btn" data-category="backend">
+                <i class="fas fa-server"></i> Backend
+            </button>
+            <button class="skill-filter-btn" data-category="database">
+                <i class="fas fa-database"></i> Database
+            </button>
+            <button class="skill-filter-btn" data-category="tools">
+                <i class="fas fa-tools"></i> Dev Tools
+            </button>
+        </div>
+
+        <div class="skills-display">
+            <div class="tech-graph">
+                <h2 class="graph-title">Tech Stack Relationships</h2>
+                <div class="graph-canvas" id="graphCanvas">
+                    <!-- Nodes and connections will be generated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="tech-skills-container" id="skillsContainer">
+                <!-- Content will be dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <div class="contact">
+            <div class="contact-header">
+                <h1>Let's Connect</h1>
+                <p class="subtitle contact-head-desc">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="connect-text">Get in touch</h2>
+                    
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> emmanuelabidoye2021@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +2348162807117</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nigeria, Always available</p>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-dev"></i>
+                        </a>
+                    </div>
+
+                    <div class="map-section">
+                        <h2 class="map-title"><i class="fas fa-map-marked-alt"></i> Find Me Here</h2>
+                        <div class="map-container">
+                            <div id="map"></div>
+                            <div class="map-overlay">
+                                <h3>Dev Headquarters</h3>
+                                <p>123 Developer Street, Suite 101<br>San Francisco, CA 94103</p>
+                            </div>
+                        </div>
+                        <div class="map-controls">
+                            <button class="map-btn" id="satelliteView"><i class="fas fa-satellite"></i> Satellite</button>
+                            <button class="map-btn" id="streetView"><i class="fas fa-street-view"></i> Street View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your name">
+                            <div class="error-message" id="nameError">Please enter your name</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your email">
+                            <div class="error-message" id="emailError">Please enter a valid email</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                            <div class="error-message" id="subjectError">Please enter a subject</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your message"></textarea>
+                            <div class="error-message" id="messageError">Please enter your message</div>
+                        </div>
+
+                        <button type="submit" class="btn-submit"><h3>Send Message</h3></button>
+                    </form>
+
+                    <div class="thank-you-message" id="thankYouMessage">
+                        <div class="thank-you-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2 class="thank-you-text">Thank You!</h2>
+                        <p class="thank-you-subtext">Your message has been sent successfully. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container" id="footer">
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo"><i class="fas fa-code"></i> EmmanuxDev</div>
+                    <p class="footer-description">
+                        Creating beautiful, functional web experiences with modern technologies. 
+                        Focused on React, Node.js, and cloud solutions.
+                    </p>
+                    <div class="made-by">
+                        <span class="code-text">>> madeBy</span>("EmmanuxDev");<span class="footer-cursor"></span>
+                    </div>
+                    <div class="copyright">
+                        &copy; <span id="currentYear"></span> All Rights Reserved.
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <div class="quick-links">
+                        <a href="#HeroSection" class="nav-link"><i class="fas fa-chevron-right"></i> Home</a>
+                        <a href="#project" class="nav-link"><i class="fas fa-chevron-right"></i> Projects</a>
+                        <a href="#skills" class="nav-link"><i class="fas fa-chevron-right"></i> Skills</a>
+                        <a href="#AboutSection" class="nav-link"><i class="fas fa-chevron-right"></i> About</a>
+                        <a href="#contact" class="nav-link"><i class="fas fa-chevron-right"></i> Contact</a>
+                        <a href="#blog" class="nav-link"><i class="fas fa-chevron-right"></i> Blog</a>
+                    </div>
+                </div>
+
+                <div class="footer-skills">
+                    <h3>Top Skills</h3>
+                    <div class="skills-badges">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">TypeScript</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">UI/UX</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Docker</span>
+                    </div>
+
+                    <div class="recent-posts">
+                        <h3>Recent Posts</h3>
+                        <div class="post-item">
+                            <a href="#" class="post-title">Building Scalable React Applications</a>
+                            <div class="post-date"><i class="far fa-clock"></i> 3 days ago</div>
+                        </div>
+                        <div class="post-item">
+                            <a href="#" class="post-title">Introduction to Cloud Functions</a>
+                            <div class="post-date"><i class="far fa-clock"></i> 2 weeks ago</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p class="footer-description">Stay updated with my latest projects and tutorials.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                        </div>
+                        <button type="submit" class="btn-subscribe">Subscribe <i class="fas fa-paper-plane"></i></button>
+                    </form>
+
+                    <div class="visitor-count">
+                        <i class="fas fa-eye"></i> <span>Page Views: </span>
+                        <span id="visitorCount">1,247</span>
+                        <span class="badge">+24 today</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-social-icons">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-dev"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-codepen"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <i class="fas fa-shield-alt"></i> Secured with HTTPS • <i class="fas fa-tachometer-alt"></i> 99.9% Uptime
+                </div>
+                
+                <button class="back-to-top" id="backToTop">
+                    Back to Top <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5tYKVyP2q4ZrnT5fYRh8jeXzz+QkI6cY&callback=initMap" async defer></script>
+
+<script src="main.js"></script>
+<!-- <script src="techskills.js"></script>
+<script src="contact.js"></script>
+<script src="footer.js"></script>
+<script src="themetoggle.js"></script>
+<script src="themes.js"></script> -->
+</html>
