@@ -92,6 +92,7 @@ body.blue-theme {
     --card-bg: rgba(15, 20, 35, 0.7);
     --card-border: rgba(0, 242, 254, 0.3);
     --button-primary-hover: rgba(0, 242, 254, 0.1);
+    --shadow-glow: 0 0 60px var(--accent);
     --shadow-glow-light: 0 0 20px rgba(0, 242, 254, 0.5);
     --shadow-primary-btn: 0 10px 20px rgba(0, 242, 254, 0.2);
     --transition: all 0.3s ease;
@@ -158,6 +159,8 @@ nav.scrolled {
 .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 0.8rem;
     gap: 10px;
     font-weight: 700;
     font-size: 1.5rem;
@@ -232,6 +235,7 @@ nav.scrolled {
     display: flex;
     gap: 3rem;
     align-items: center;
+    align-self: center;
 }
 
 .cta-button {
@@ -1532,7 +1536,7 @@ nav.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--bg-primary);
     font-weight: bold;
     font-size: 0.9rem;
     transform: translate(-50%, -50%);
@@ -1733,8 +1737,7 @@ nav.scrolled {
     text-align: center;
     padding: 3rem 2rem 2rem;
     border-radius: 6rem;
-    background: radial-gradient(circle at 20% 50%, var(--accent) 0%, #1e7a8a 50%, var(--accent) 70%);
-    /* background: var(--accent); */
+    background: radial-gradient(circle at 20% 50%, var(--accent) 0%, #1e7a8a 50%, var(--bg-primary) 70%);
 }
 
 .contact-header h1 {
@@ -1755,6 +1758,8 @@ nav.scrolled {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+    margin-top: 3rem;
+    /* align-items: center; */
 }
 
 .contact-info {
@@ -1855,6 +1860,7 @@ nav.scrolled {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: var(--bg-primary);
 }
 
 .form-group {
@@ -1875,7 +1881,7 @@ nav.scrolled {
     background: var(--bg-contact);
     border: 2px solid #334155;
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 1rem;
     transition: all 0.3s ease;
 }
@@ -2101,13 +2107,6 @@ textarea.form-control {
     margin: 0 auto;
 }
 
-
-/* @media (max-width: 700px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-} */
-
 .footer-info {
     display: flex;
     flex-direction: column;
@@ -2269,7 +2268,7 @@ textarea.form-control {
     background: var(--bg-secondary);
     border: 1px solid #335552;
     border-radius: 8px;
-    color: var(--bg-primary);
+    color: var(--text-primary);
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
@@ -2680,4 +2679,105 @@ textarea.form-control {
         font-size: 1.5rem;
     }
 
+}
+
+@media (max-width: 465px) {
+    .nav-right {
+        gap: 1.7rem;
+    }
+
+    .logo {
+        gap: 6px;
+        font-size: 1.4;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .profile-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .journey-section {
+        padding: 0.8rem;
+    }
+
+    .Personality-heading {
+        font-size: 1.4rem;
+    }
+
+    .project-head h1, .about-heading, .skills-header h1 { 
+        font-size: 2.5rem;
+    }
+
+    .projects-container {
+        padding: 1rem;
+    }
+
+    .skill-meter {
+        height: 18px;
+    }
+
+    .contact {
+        padding: 2rem 1rem 0rem 1rem;;
+    }
+
+    .contact-header p{
+        width: 80%;
+    }
+
+    .contact-content {
+        padding: 0rem;
+        margin-bottom: 3rem;
+    }
+
+    .connect-text {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        padding: 0rem;
+        text-align: center;
+    }
+
+    .contact-details {
+        width: 100%;
+    }
+
+    .contact-details p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contact-details i {
+        margin-right: 6px;
+    }
+
+    .social-icons {
+        margin-left: 2rem;
+    }
+
+    .contact-form {
+      padding: 1rem;  
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+        
 }

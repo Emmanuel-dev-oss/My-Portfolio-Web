@@ -127,7 +127,7 @@ window.addEventListener('scroll', () => {
 
         if (cardTop < windowHeight - 100) {
             card.style.opacity = '1';
-            card.style.transform = 'translateX(10px)';
+            card.style.transform = 'translateX(0px)';
             card.style.transition = 'all 0.6s ease-out';
         }
     })
