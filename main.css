@@ -1752,6 +1752,8 @@ nav.scrolled {
 .contact-head-desc {
     font-weight: 600;
     color: var(--bg-primary);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-content {
