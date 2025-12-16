@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         {
           name: "React",
           value: 90,
-          color: "linear-gradient(to right, #4facfe, #00f2fe)",
+          color: "linear-gradient(to right, #00BCD4, #00f2fe)",
         },
         {
           name: "Vue.js",
@@ -249,8 +249,10 @@ document.addEventListener("DOMContentLoaded", function () {
         toolEl.className = "tool-item";
         toolEl.style.animationDelay = `${index * 0.1}s`;
         toolEl.innerHTML = `
+                <div class="tool-label">
                 <div class="tool-icon"><i class="fas ${tool.icon}"></i></div>
                 <div class="tool-name">${tool.name}</div>
+                </div>
                 <div class="tool-desc">${tool.desc}</div>
             `;
         toolsGrid.appendChild(toolEl);

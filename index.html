@@ -100,7 +100,7 @@
                 <li><a href="#skills">Tech-stack</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="cta-button pulse">Contact Me</button>
+            <button class="cta-button pulse hamburger-btn">Contact Me</button>
         </div>
     </section>
     
@@ -121,7 +121,7 @@
                     &nbsp;&nbsp;<span class="code-keyword">name</span>: <span class="code-string">"Abidoye Emmanuel"</span>,<br>
                     &nbsp;&nbsp;<span class="code-keyword">title</span>: <span class="code-string">"Full-Stack Developer"</span>,<br>
                     &nbsp;&nbsp;<span class="code-keyword">skills</span>: [<span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"AI/ML"</span>],<br>
-                    &nbsp;&nbsp;<span class="code-keyword">passion</span>: <span class="code-string">"Creating innovative digital solutions<span class="cursor code"></span>"</span><br>
+                    &nbsp;&nbsp;<span class="code-keyword">passion</span>: <span class="code-string">"Creating innovative digital solutions<span class="code-cursor code"></span>"</span><br>
                     };
                 </div>
 
@@ -133,15 +133,13 @@
 
             <div class="image-container">
                 <div class="glow"></div>
-                <div class="image-overlay"></div>
                 <img src="https://i.postimg.cc/fyPqNKKF/1000172668-removebg-preview.png" alt="Developer Profile" class="profile-image">
-                <div class="scanlines"></div>
                 <div class="particles-container" id="particles"></div>
             </div>
         </div>
     </section>
 
-    <section class="container" id="aboutsection">
+    <section class="container about" id="aboutsection">
         <h2 class="section-title about-heading">About Me</h2>
         
         <div class="about-content">
@@ -215,6 +213,7 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <div class="timeline-mask"></div>
                         <div class="timeline-date">2022</div>
                         <h4 class="timeline-title">Computer Engineering Degree</h4>
                         <p class="timeline-desc">My computer engineering journey has been defined by a deep-seated passion for system integration, a drive to create a seamless interface between hardware and software. I've gained hands-on experience by mastering core concepts from digital logic and electronics to network analysis. My expertise extends to the software layer, where I've applied my knowledge of object-oriented programming and assembly language to solve complex problems. These experiences have given me a unique perspective on the entire computing stack, positioning me to excel in roles that demand a holistic understanding of how systems are built and optimized.</p>
@@ -223,8 +222,18 @@
 
                 <div class="timeline-item">
                     <div class="timeline-content">
+                        <div class="timeline-mask"></div>
                         <div class="timeline-date">2022</div>
                         <h4 class="timeline-title">First Line of Code</h4>
+                        <p class="timeline-desc">My passion for programming ignited with my first line of code in C++. This experience grounded me in core programming concepts—from data structures and algorithms to the intricacies of object-oriented programming. Building on this solid foundation, I expanded my skills to modern web technologies, specifically JavaScript. I am currently channeling this expertise into a CGPA calculator with a web interface, a project that demonstrates my ability to integrate complex logic with a user-centric design. I'm actively pursuing new challenges and creating more projects that showcase my full-stack capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-mask"></div>
+                        <div class="timeline-date">2023</div>
+                        <h4 class="timeline-title">First Project</h4>
                         <p class="timeline-desc">My passion for programming ignited with my first line of code in C++. This experience grounded me in core programming concepts—from data structures and algorithms to the intricacies of object-oriented programming. Building on this solid foundation, I expanded my skills to modern web technologies, specifically JavaScript. I am currently channeling this expertise into a CGPA calculator with a web interface, a project that demonstrates my ability to integrate complex logic with a user-centric design. I'm actively pursuing new challenges and creating more projects that showcase my full-stack capabilities.</p>
                     </div>
                 </div>
@@ -262,290 +271,309 @@
         </div>
     </section>
 
-    <section class="container" id="project">
+    <section class="container project" id="project">
         <div class="project-head">
             <h1>My Projects</h1>
             <p class="subtitle">A showcase of my latest work featuring modern technologies and innovative solutions. Hover over cards to see details.</p>
         </div>
 
-        <!-- Skill Filter -->
-        <div class="filter-bar">
-           <div class="filter-btns">
-                <button class="filter-btn active" data-tech="all">All</button>
-                <button class="filter-btn" data-tech="E-commerce Payment">E-commerce platforms</button>
-                <button class="filter-btn" data-tech="Blogging platforms">Blogging platforms</button>
-                <button class="filter-btn" data-tech="Social media applications">Social media applications</button>
-                <button class="filter-btn" data-tech="News portals">News portals</button>
-                <button class="filter-btn" data-tech="Online Forums">Online Forums</button>
-                <button class="filter-btn" data-tech="iOS applications">iOS applications</button>
-                <button class="filter-btn" data-tech="Androidapp">Android applications</button>
-                <button class="filter-btn" data-tech="Cross-platform apps (React Nactive, Flutter)">Cross-platform apps (React Nactive, Flutter)</button>
-                <button class="filter-btn" data-tech="Data Visualisation">Data Visualisation</button>
-                <button class="filter-btn" data-tech="Machine Learning Models">Machine Learning Models</button>
-                <button class="filter-btn" data-tech="Predictive analytics">Predictive analytics</button>
-                <button class="filter-btn" data-tech="Data mining projects">Data mining projects</button>
-                <button class="filter-btn" data-tech="Chatbots">Chatbots</button>
-                <button class="filter-btn" data-tech="Visual assistants">Visual assistants</button>
-                <button class="filter-btn" data-tech="Automated workflows">Automated workflows</button>
-                <button class="filter-btn" data-tech="Ai-powered tools">Ai-powered tools</button>
-                <button class="filter-btn hidden-category" data-tech="Wed based games">Wed based games</button>
-                <button class="filter-btn hidden-category" data-tech="Mobile games">Mobile games</button>
-                <button class="filter-btn hidden-category" data-tech="CRM systems">CRM systems</button>
-                <button class="filter-btn hidden-category" data-tech="ERP systems">ERP systems</button>
-                <button class="filter-btn hidden-category" data-tech="Project management tools">Project management tools</button>
-                <button class="filter-btn hidden-category" data-tech="Custom business applications">Custom business applications</button>
-                <button class="filter-btn hidden-category" data-tech="RESTful APIs">RESTful APIs</button>
-                <button class="filter-btn hidden-category" data-tech="GraphQL APIs">GraphQL APIs</button>
-                <button class="filter-btn hidden-category" data-tech="API integrations">API integrations</button>
-                <button class="filter-btn hidden-category" data-tech="Cloud infrastructure projects (AWS, Azure, Google Cloud)">Cloud infrastructure projects (AWS, Azure, Google Cloud)</button>
-                <button class="filter-btn hidden-category" data-tech="Containerization (Docker)">Containerization (Docker)</button>
-                <button class="filter-btn hidden-category" data-tech="Continuous Integration/Continuous Deployment (CI/CD) pipelines">Continuous Integration/Continuous Deployment (CI/CD) pipelines</button>
-                <button class="filter-btn hidden-category" data-tech="Penetration testing projects">Penetration testing projects</button>
-                <button class="filter-btn hidden-category" data-tech="Security audit tools">Security audit tools</button>
-                <button class="filter-btn hidden-category" data-tech="Secure coding practices">Secure coding practices</button>
-                <button class="filter-btn hidden-category" data-tech="Educational tools">Educational tools</button>
-                <button class="filter-btn hidden-category" data-tech="Interactive simulations">Interactive simulations</button>
-                <button class="filter-btn hidden-category" data-tech="Healthcare management systems">Healthcare management systems</button>
-                <button class="filter-btn hidden-category" data-tech="Medical record systems">Medical record systems</button>
-                <button class="filter-btn hidden-category" data-tech="Wellness tracking applications">Wellness tracking applications</button>
-                <button class="filter-btn hidden-category" data-tech="Financial analytics tools">Financial analytics tools</button>
-                <button class="filter-btn hidden-category" data-tech="Payment">Payment gateways</button>
-           </div>
-
-            <div class="show-more-container">
-                <button class="show-more-btn" id="showMoreBtn">
-                    <span>Show more</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-            </div>
-        </div>
-
-        <div class="projects-container">
-            <!-- Project 1 -->
-            <div class="project-card large-card filtered-card"  data-tech="E-commerce Payment Androidapp">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-title">E-Commerce Platform</h3>
-                            <p class="project-description">A full-featured online shopping experience with product filtering, user authentication, and payment processing.</p>
-                        </div>
+        <div class="skill-filter-container">
+            <!-- Skill Filter -->
+            <div class="filter-bar-container">
+                <div class="filter-bar">
+                    <div class="search-bar filter-btns" id="searchBar">
+                        <form class="search-form">
+                            <i class="fas fa-search search-icon" id="searchBtn"></i>
+                            <input type="text" class="search-input" id="searchInput" placeholder="Explore my projects...">
+                        </form>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>E-Commerce Platform</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> User authentication & authorization</li>
-                                <li><i class="fas fa-check-circle"></i> Shopping cart & wishlist</li>
-                                <li><i class="fas fa-check-circle"></i> Payment integration with Stripe</li>
-                                <li><i class="fas fa-check-circle"></i> Admin dashboard</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://responsive-admin-dashboard-psi.vercel.app" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="https://github.com/Emmanuel-dev-oss/Responsive-Admin-Dashboard" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
+                    <div class="filter-btns">
+                        <button class="filter-btn active" data-tech="all">All....</button>
+                        <button class="filter-btn" data-tech="E-commerce Payment">E-commerce</button>
+                        <button class="filter-btn" data-tech="Blogging platforms">Blogging</button>
+                        <button class="filter-btn" data-tech="Social media applications">Social media app</button>
+                        <button class="filter-btn" data-tech="News portals">News portals</button>
+                        <button class="filter-btn" data-tech="Online Forums">Online Forums</button>
+                        <button class="filter-btn" data-tech="iOS applications">iOS app</button>
+                        <button class="filter-btn" data-tech="Androidapp">Android app</button>
+                        <button class="filter-btn" data-tech="Cross-platform apps (React Nactive, Flutter)">Cross-plat apps</button>
+                        <button class="filter-btn" data-tech="Data Visualisation">Data Visuals</button>
+                        <button class="filter-btn" data-tech="Machine Learning Models">ML Models</button>
+                        <button class="filter-btn" data-tech="Predictive analytics">Predictive analytics</button>
+                        <button class="filter-btn hidden-category" data-tech="Data mining projects">Data-mining proj.</button>
+                        <button class="filter-btn hidden-category" data-tech="Chatbots">Chatbots</button>
+                        <button class="filter-btn hidden-category" data-tech="Visual assistants">Visual assistants</button>
+                        <button class="filter-btn hidden-category" data-tech="Automated workflows">Automated workflows</button>
+                        <button class="filter-btn hidden-category" data-tech="Ai-powered tools">Ai-powered tools</button>
+                        <button class="filter-btn hidden-category" data-tech="Wed based games">Wed based games</button>
+                        <button class="filter-btn hidden-category" data-tech="Mobile games">Mobile games</button>
+                        <button class="filter-btn hidden-category" data-tech="CRM systems">CRM systems</button>
+                        <button class="filter-btn hidden-category" data-tech="ERP systems">ERP systems</button>
+                        <button class="filter-btn hidden-category" data-tech="Project management tools">Proj. managmt tools</button>
+                        <button class="filter-btn hidden-category" data-tech="Custom business applications">Custom business app.</button>
+                        <button class="filter-btn hidden-category" data-tech="RESTful APIs">RESTful APIs</button>
+                        <button class="filter-btn hidden-category" data-tech="GraphQL APIs">GraphQL APIs</button>
+                        <button class="filter-btn hidden-category" data-tech="API integrations">API integrations</button>
+                        <button class="filter-btn hidden-category" data-tech="Cloud infrastructure projects (AWS, Azure, Google Cloud)">Cloud projects</button>
+                        <button class="filter-btn hidden-category" data-tech="Containerization (Docker)">Containerization</button>
+                        <button class="filter-btn hidden-category" data-tech="Continuous Integration/Continuous Deployment (CI/CD) pipelines">(CI/CD) pipelines</button>
+                        <button class="filter-btn hidden-category" data-tech="Penetration testing projects">Pen. testing proj.</button>
+                        <button class="filter-btn hidden-category" data-tech="Security audit tools">Sec. audit tools</button>
+                        <button class="filter-btn hidden-category" data-tech="Secure coding practices">Secure coding pract.</button>
+                        <button class="filter-btn hidden-category" data-tech="Educational tools">Educational tools</button>
+                        <button class="filter-btn hidden-category" data-tech="Interactive simulations">Interactive simu.</button>
+                        <button class="filter-btn hidden-category" data-tech="Healthcare management systems">Healthcare managmt sys.</button>
+                        <button class="filter-btn hidden-category" data-tech="Medical record systems">Medical record sys.</button>
+                        <button class="filter-btn hidden-category" data-tech="Wellness tracking applications">Wellness tracking app.</button>
+                        <button class="filter-btn hidden-category" data-tech="Financial analytics tools">Fin. analytics tools</button>
+                        <button class="filter-btn hidden-category" data-tech="Payment">Payment gateways</button>
+                    </div>
+
+                    <div class="show-more-container">
+                        <button class="show-more-btn" id="showMoreBtn">
+                            <span>Show more</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card medium-card filtered-card" data-tech="Androidapp">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">CSS3</span>
+            <div class="projects-wrapper">
+               <div class="projects-container" id="projectContainer">
+                    <!-- no-results -->
+                    <div class="no-results small-card">
+                        <h3 class="no-result-message">No items found!</h3>
+                        <p>Try adjusting your search or filters</p>
+                        <button class="clear-filters">Reset Search</button>
+                    </div>
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card large-card filtered-card"  data-tech="E-commerce Payment Androidapp">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">E-Commerce Platform</h3>
+                                    <p class="project-description">A full-featured online shopping experience with product filtering, user authentication, and payment processing.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>E-Commerce Platform</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> User authentication & authorization</li>
+                                        <li><i class="fas fa-check-circle"></i> Shopping cart & wishlist</li>
+                                        <li><i class="fas fa-check-circle"></i> Payment integration with Stripe</li>
+                                        <li><i class="fas fa-check-circle"></i> Admin dashboard</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://responsive-admin-dashboard-psi.vercel.app" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="https://github.com/Emmanuel-dev-oss/Responsive-Admin-Dashboard" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Task Management App</h3>
-                            <p class="project-description">A drag-and-drop task management application with real-time updates and team collaboration features.</p>
-                        </div>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>Task Management App</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> Drag & drop interface</li>
-                                <li><i class="fas fa-check-circle"></i> Real-time updates</li>
-                                <li><i class="fas fa-check-circle"></i> Team collaboration</li>
-                                <li><i class="fas fa-check-circle"></i> Progress tracking</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card small-card filtered-card" data-tech="Androidapp">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">React Native</span>
-                                <span class="tag">Redux</span>
-                                <span class="tag">API</span>
+                    <!-- Project 2 -->
+                    <div class="project-card medium-card filtered-card" data-tech="Androidapp">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">Vue.js</span>
+                                        <span class="tag">Firebase</span>
+                                        <span class="tag">CSS3</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Task Management App</h3>
+                                    <p class="project-description">A drag-and-drop task management application with real-time updates and team collaboration features.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>Task Management App</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> Drag & drop interface</li>
+                                        <li><i class="fas fa-check-circle"></i> Real-time updates</li>
+                                        <li><i class="fas fa-check-circle"></i> Team collaboration</li>
+                                        <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Weather Forecast App</h3>
-                            <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
-                        </div>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>Weather Forecast App</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
-                                <li><i class="fas fa-check-circle"></i> Interactive maps</li>
-                                <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
-                                <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-             <!-- Project 4 -->
-            <div class="project-card small-card filtered-card" data-tech="Androidapp">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">React Native</span>
-                                <span class="tag">Redux</span>
-                                <span class="tag">API</span>
+                    <!-- Project 3 -->
+                    <div class="project-card small-card filtered-card" data-tech="Androidapp">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">React Native</span>
+                                        <span class="tag">Redux</span>
+                                        <span class="tag">API</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Weather Forecast App</h3>
+                                    <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>Weather Forecast App</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
+                                        <li><i class="fas fa-check-circle"></i> Interactive maps</li>
+                                        <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
+                                        <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Weather Forecast App</h3>
-                            <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
-                        </div>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>Weather Forecast App</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
-                                <li><i class="fas fa-check-circle"></i> Interactive maps</li>
-                                <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
-                                <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 5 -->
-            <div class="project-card medium-card filtered-card" data-tech="Social media applications">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">GraphQL</span>
-                                <span class="tag">Tailwind</span>
+                    <!-- Project 4 -->
+                    <div class="project-card small-card filtered-card" data-tech="Androidapp">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">React Native</span>
+                                        <span class="tag">Redux</span>
+                                        <span class="tag">API</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Weather Forecast App</h3>
+                                    <p class="project-description">A mobile application that provides detailed weather forecasts with interactive maps and severe weather alerts.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>Weather Forecast App</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> 7-day forecasts</li>
+                                        <li><i class="fas fa-check-circle"></i> Interactive maps</li>
+                                        <li><i class="fas fa-check-circle"></i> Severe weather alerts</li>
+                                        <li><i class="fas fa-check-circle"></i> Location-based forecasts</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Social Media Dashboard</h3>
-                            <p class="project-description">A comprehensive dashboard for managing social media accounts with analytics and scheduling capabilities.</p>
-                        </div>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>Social Media Dashboard</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> Multi-platform integration</li>
-                                <li><i class="fas fa-check-circle"></i> Analytics & reporting</li>
-                                <li><i class="fas fa-check-circle"></i> Content scheduling</li>
-                                <li><i class="fas fa-check-circle"></i> Audience insights</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 6 -->
-            <div class="project-card large-card filtered-card" data-tech="Predictive analytics">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <div class="project-media">
-                            <video autoplay loop muted>
-                                <source src="" type="video/mp4">
-                            </video>
-                            <div class="project-tags">
-                                <span class="tag">Angular</span>
-                                <span class="tag">Express</span>
-                                <span class="tag">MySQL</span>
+                    <!-- Project 5 -->
+                    <div class="project-card medium-card filtered-card" data-tech="Social media applications">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">Next.js</span>
+                                        <span class="tag">GraphQL</span>
+                                        <span class="tag">Tailwind</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Social Media Dashboard</h3>
+                                    <p class="project-description">A comprehensive dashboard for managing social media accounts with analytics and scheduling capabilities.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>Social Media Dashboard</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> Multi-platform integration</li>
+                                        <li><i class="fas fa-check-circle"></i> Analytics & reporting</li>
+                                        <li><i class="fas fa-check-circle"></i> Content scheduling</li>
+                                        <li><i class="fas fa-check-circle"></i> Audience insights</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-title">Fitness Tracker</h3>
-                            <p class="project-description">A comprehensive fitness application with workout planning, progress tracking, and nutrition logging.</p>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card large-card filtered-card" data-tech="Predictive analytics">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <div class="project-media">
+                                    <video autoplay loop muted>
+                                        <source src="" type="video/mp4">
+                                    </video>
+                                    <div class="project-tags">
+                                        <span class="tag">Angular</span>
+                                        <span class="tag">Express</span>
+                                        <span class="tag">MySQL</span>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3 class="project-title">Fitness Tracker</h3>
+                                    <p class="project-description">A comprehensive fitness application with workout planning, progress tracking, and nutrition logging.</p>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <div class="project-details">
+                                    <h3>Fitness Tracker</h3>
+                                    <ul class="project-features">
+                                        <li><i class="fas fa-check-circle"></i> Workout planning</li>
+                                        <li><i class="fas fa-check-circle"></i> Progress tracking</li>
+                                        <li><i class="fas fa-check-circle"></i> Nutrition logging</li>
+                                        <li><i class="fas fa-check-circle"></i> Social challenges</li>
+                                    </ul>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                    <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card-back">
-                        <div class="project-details">
-                            <h3>Fitness Tracker</h3>
-                            <ul class="project-features">
-                                <li><i class="fas fa-check-circle"></i> Workout planning</li>
-                                <li><i class="fas fa-check-circle"></i> Progress tracking</li>
-                                <li><i class="fas fa-check-circle"></i> Nutrition logging</li>
-                                <li><i class="fas fa-check-circle"></i> Social challenges</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            <a href="#" class="btn btn-code"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
+               </div>
             </div>
         </div>
     </section>
 
-    <section class="container" id="skills">
+    <section class="container skills-container" id="skills">
         <div class="skills-header">
             <h1>My tech mastery</h1>
             <p class="subtitle">Explore my technical skills across different domains. Click on categories to see detailed skills and their relationships.</p>
@@ -580,7 +608,7 @@
         </div>
     </section>
 
-    <section class="container" id="contact">
+    <section class="container contact-section" id="contact">
         <div class="contact">
             <div class="contact-header">
                 <h1>Let's Connect</h1>
@@ -594,9 +622,9 @@
                     </div>
                     
                     <div class="contact-details">
-                        <p><i class="fas fa-envelope"></i>emmanuelabidoye2021@gmail.com</p>
                         <p><i class="fas fa-phone"></i>+2348162807117</p>
                         <p><i class="fas fa-map-marker-alt"></i>Nigeria, Always available</p>
+                        <p><i class="fas fa-envelope"></i>emmanuelabidoye2021@gmail.com</p>
                     </div>
 
                     <div class="social-icons">
@@ -656,7 +684,7 @@
                             <div class="error-message" id="messageError">Please enter your message</div>
                         </div>
 
-                        <button type="submit" class="btn-submit"><h3>Send Message</h3></button>
+                        <button type="submit" class="btn-submit"><h3>Send Me a Message</h3></button>
                     </form>
 
                     <div class="thank-you-message" id="thankYouMessage">
@@ -671,13 +699,13 @@
         </div>
     </section>
 
-    <footer class="container" id="footer">
+    <footer class="container footer-container" id="footer">
         <div class="footer">
             <div class="footer-content">
                 <div class="footer-info">
                     <div class="logo"><i class="fas fa-code"></i> EmmanuxDev</div>
                     <p class="footer-description">
-                        Creating beautiful, functional web experiences with modern technologies. 
+                        I create beautiful, functional web experiences with modern technologies. 
                         Focused on React, Node.js, and cloud solutions.
                     </p>
                     <div class="made-by">
@@ -701,17 +729,19 @@
                 </div>
 
                 <div class="footer-skills">
-                    <h3>Top Skills</h3>
-                    <div class="skills-badges">
-                        <span class="skill-badge">React</span>
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">MongoDB</span>
-                        <span class="skill-badge">AWS</span>
-                        <span class="skill-badge">UI/UX</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Docker</span>
-                    </div>
+                   <div class="footer-skill-badge">
+                        <h3>Top Skills</h3>
+                        <div class="skills-badges">
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">TypeScript</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">AWS</span>
+                            <span class="skill-badge">UI/UX</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">Docker</span>
+                        </div>
+                   </div>
 
                     <div class="recent-posts">
                         <h3>Recent Posts</h3>
@@ -731,7 +761,7 @@
                     <p class="footer-description">Stay updated with my latest projects and tutorials.</p>
                     <form class="newsletter-form">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <input type="email" class="form-control-footer" placeholder="Your email address" required>
                         </div>
                         <button type="submit" class="btn-subscribe">Subscribe <i class="fas fa-paper-plane"></i></button>
                     </form>
@@ -753,12 +783,12 @@
                     <a href="#" class="footer-social-icon"><i class="fab fa-codepen"></i></a>
                 </div>
                 
-                <div class="copyright">
+                <div class="bottom-copyright">
                     <i class="fas fa-shield-alt"></i> Secured with HTTPS • <i class="fas fa-tachometer-alt"></i> 99.9% Uptime
                 </div>
                 
                 <button class="back-to-top" id="backToTop">
-                    Back to Top <i class="fas fa-arrow-up"></i>
+                    Back to Top<i class="fas fa-arrow-up"></i>
                 </button>
             </div>
         </div>
@@ -774,4 +804,5 @@
 <script src="footer.js"></script>
 <script src="themetoggle.js"></script>
 <script src="themes.js"></script>
+<script src="search.js"></script>
 </html>

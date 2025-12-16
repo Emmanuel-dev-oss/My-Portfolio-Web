@@ -1,5 +1,5 @@
 // Typing animation
-const titles = ["Full-Stack Developer", "AI Engineer", "Problem Solver", "Creative Coder"];
+const titles = ["Computer engineer", "Software engineer", "full-stack Dev.", "lover of AI", "Problem-solver", "Creative-Coder"];
 const typingElement = document.getElementById('typing-text');
 const cursor = document.querySelector('.cursor');
 
@@ -154,6 +154,7 @@ window.addEventListener('scroll', () => {
 
 //== Get all nav-links and sections ==//
 const navLink = document.querySelectorAll('.nav-link');
+// const mobileLink = document.querySelectorAll('.mobile-links a');
 const sections = document.querySelectorAll('section');
     // Function to update active links
     function updateActiveNav() {
@@ -174,6 +175,14 @@ const sections = document.querySelectorAll('section');
     navLink.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+
+    //Update mobile links
+    mobileLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`){
             link.classList.add('active');
         }
     });
@@ -293,33 +302,33 @@ showMoreBtn.addEventListener('click', () => {
    }
 });
 
-//== Projeect Filter ==//
-const filterBtns = document.querySelectorAll(".filter-btn");
-const projectCards = document.querySelectorAll(".filtered-card");
+// //== Projeect Filter ==//
+// const filterBtns = document.querySelectorAll(".filter-btn");
+// const projectCards = document.querySelectorAll(".filtered-card");
 
-filterBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        filterBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
+// filterBtns.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         filterBtns.forEach(b => b.classList.remove("active"));
+//         btn.classList.add("active");
 
-        const tech = btn.dataset.tech;
+//         const tech = btn.dataset.tech;
 
-        // Show all if "all" is selected
-        if (tech === "all") {
-          projectCards.forEach(card => {
-            card.style.display = "block";
-          });
-          return;
-        }
+//         // Show all if "all" is selected
+//         if (tech === "all") {
+//           projectCards.forEach(card => {
+//             card.style.display = "block";
+//           });
+//           return;
+//         }
 
-        projectCards.forEach(card => {
-          const cardTech = card.dataset.tech;
+//         projectCards.forEach(card => {
+//           const cardTech = card.dataset.tech;
 
-          if (cardTech.includes(tech) ) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
-    });
-});
+//           if (cardTech.includes(tech) ) {
+//             card.style.display = "block";
+//           } else {
+//             card.style.display = "none";
+//           }
+//         });
+//     });
+// });
