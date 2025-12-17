@@ -1576,10 +1576,6 @@ nav.scrolled {
 }
 
 /* technical skilss styling starts here */
-/* .skills-container {
-    margin-top
-} */
-
 .skills-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -1618,6 +1614,7 @@ nav.scrolled {
     color: var(--nav-text);
     transform: translateY(-2px);
     box-shadow: var(--cta-btn-shadow);
+    border: none;
 }
 
 .skills-display {
