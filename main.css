@@ -1633,7 +1633,8 @@ nav.scrolled {
     padding: 1.5rem;
     box-shadow: var(--code-snippet-shadow);
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
     max-height: 370px;
 }
 
@@ -2745,7 +2746,7 @@ footer .logo i {
     }
 
     .container {
-        padding: 3rem 2rem 0rem 2rem;
+        padding: 3rem 1rem 0rem 1rem;
     }
 
     .hero {
