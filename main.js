@@ -142,6 +142,7 @@ document.querySelectorAll('.trait-item, .tech-skills-container').forEach(card =>
 
 //== Scroll effect for navbar ==//
 const navbar = document.getElementById('navbar');
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
@@ -194,10 +195,12 @@ window.addEventListener('scroll', updateActiveNav);
 //== Mobile menu functionality ==//
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
+const overlay = document.querySelector('.overlay');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mobileMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
     
     // Prevent body scrolling when menu is open
     if (mobileMenu.classList.contains('active')) {
@@ -217,12 +220,23 @@ mobileLinks.forEach(link => {
     });
 });
 
+overlay.addEventListener('click', () => {
+    overlay.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = 'auto';
+    hamburger.focus();
+    if (mobileMenu.classList.toggle('active')) {
+        mobileMenu.classList.remove('active');
+    }
+});
+
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
     // Tab key cycles through focusable elements
     if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
         hamburger.classList.remove('active');
         mobileMenu.classList.remove('active');
+        overlay.classList.remove('active');
         document.body.style.overflow = 'auto';
         hamburger.focus();
     }

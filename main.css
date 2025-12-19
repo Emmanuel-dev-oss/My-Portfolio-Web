@@ -136,6 +136,11 @@ body {
     overflow-x: hidden;
 }
 
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .container {
     max-width: 100%;
     width: 100%;
@@ -424,15 +429,14 @@ nav.scrolled {
     right: -100%;
     width: 50%;
     height: 100vh;
-    background: linear-gradient(180deg,var(--bg-primary) 80%, var(--nav-text) 30%, var(--nav-bg-scrolled)) 50%;
+    background: var(--bg-primary);
     z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     transition: var(--transition);
-    padding: 20px;
-    box-shadow: var(--image-shadow);
+    padding: 120px 20px 20px 20px;
 }
 
 .mobile-menu.active {
@@ -478,6 +482,25 @@ nav.scrolled {
 
 .mobile-menu .theme-toggle {
     margin: 30px 0;
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #00224460;
+    transition: var(--transition);
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
 }
 
 /* Hero Styling Starts Here */
@@ -1609,12 +1632,17 @@ nav.scrolled {
     z-index: 1;
 }
 
+.skill-filter-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .skill-filter-btn:hover, .skill-filter-btn.active {
     background: var(--nav-bg-scrolled);
     color: var(--nav-text);
     transform: translateY(-2px);
     box-shadow: var(--cta-btn-shadow);
-    border: none;
+    border: 1px solid var(--nav-text);
 }
 
 .skills-display {
@@ -1625,14 +1653,18 @@ nav.scrolled {
 }
 
 .tech-graph {
-    background: linear-gradient(145deg, var(--nav-bg) 0%, var(--nav-bg-scrolled));
+    background-color: var(--nav-bg-scrolled);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: var(--code-snippet-shadow);
     position: relative;
-    overflow-y: hidden;
-    overflow-x: auto;
-    max-height: 370px;
+    overflow: hidden;
+    max-height: 400px;
+    /* max-width: 100%; */
 }
 
 .graph-title {
@@ -1646,8 +1678,29 @@ nav.scrolled {
     width: 100%;
     height: 300px;
     position: relative;
+    border-radius: 10px;
+    background: linear-gradient(145deg, var(--nav-bg) 0%, var(--nav-bg-scrolled));
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
+/* For graph cvanva WebKit browsers (Chrome, Safari, Edge) */
+.graph-canvas::-webkit-scrollbar {
+  height: 4px; /* width of the entire scrollbar */
+}
+
+.graph-canvas::-webkit-scrollbar-track {
+  background: var(--nav-bg-scrolled); /* color of the tracking area */
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.graph-canvas::-webkit-scrollbar-thumb {
+  background: var(--bg-primary); /* color of the scroll thumb */
+  border-radius: 10px;
+}
+
+/* Node styling */
 .node {
     position: absolute;
     width: 60px;
@@ -1851,16 +1904,12 @@ nav.scrolled {
 /* Contact Styling Starts Here */
 .contact-section {
     background-color: var(--nav-bg-scrolled);
-    /* border-radius: 3rem; */
     padding-top: 6rem;
 }
 .contact {
-    max-width: 1400px;
+    max-width: 100%;
     background: var(--nav-bg-scrolled);
-    border-radius: 1rem 6rem 1rem 6rem;
-    overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    padding: 1rem 1rem 0rem 1rem;
     margin-bottom: 3rem;
 }
 
@@ -1890,13 +1939,12 @@ nav.scrolled {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 1rem;
+    padding: 0rem;
     margin-top: 3rem;
-    /* align-items: center; */
 }
 
 .contact-info {
+    width: 100%;
     padding: 1rem;
 }
 
@@ -1992,7 +2040,8 @@ nav.scrolled {
 }
 
 .contact-form {
-    background: var(--contact-header-bg);
+    max-width: 100%;
+    background: var(--nav-text);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -2860,6 +2909,10 @@ footer .logo i {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
+    .project {
+        padding: 3rem 0.5rem 0rem 0.5rem;
+    }
+
     .project-head h1, .about-heading, .skills-header h1 { 
         font-size: 2.5rem;
     }
@@ -2914,7 +2967,7 @@ footer .logo i {
 
     .contact-section {
         margin-top: 6rem;
-        padding-top: 2rem;
+        padding: 4rem 0.5rem 0.1rem 0.5rem;
     }
 
     .contact {
@@ -3055,4 +3108,10 @@ footer .logo i {
         flex-wrap: wrap;
     }
         
+}
+
+@media(max-width: 368px) {
+    .logo h4 {
+        display: none;
+    }
 }
