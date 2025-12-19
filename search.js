@@ -146,8 +146,8 @@ function addClearSearchButton() {
         updateDisplay();
     });
 
-    searchInput.addEventListener('input', () => {
-        clearSearchInput.style.display = searchInput.value ? 'block' : 'none';
+    searchInput.addEventListener('input', (e) => {
+        clearSearchInput.style.display = e.target.value.length > 0  ? 'block' : 'none';
     });
 }
 

@@ -1,12 +1,18 @@
 :root {
     /* Dark theme (default) */
-    --bg-primary: #0a0a0f;
+    --bg-primary: #0F1E2E;
+    --text-primary: #E5E7EB;
+    --nav-bg: #081824;
+    --nav-bg-scrolled: #040F18;
+    --nav-text: #E5E7EB;
+    --nav-bg-scrolled-text: #F3F4F6;
+    --nav-accent: #00BCD4;
+    --nav-accent-hover: #14C3D3;
     --bg-primary-light: #0a232f;
     --bg-secondary: #112240;
     --bg-light-primary: rgba(17, 34, 64, 0.5);
     --bg-contact: rgba(30, 41, 59, 0.8);
     --bg-contact-form: rgba(15, 23, 42, 0.5);
-    --text-primary: #e6f1ff;
     --text-secondary: #8892b0;
     --timeline-bg: #0a0a0f;
     --magenta: magenta;
